@@ -4,18 +4,19 @@ A Python implementation of Modern Portfolio Theory (MPT) that uses Monte
 Carlo simulation and constrained optimization (SLSQP) to construct an
 optimal portfolio by maximizing the Sharpe Ratio.
 
+This project demonstrates quantitative finance concepts including return modeling, covariance estimation, efficient frontier visualization, and portfolio optimization under realistic constraints.
 ------------------------------------------------------------------------
 
 ## 🚀 Project Overview
 
 This project:
 
--   Downloads historical stock data from Yahoo Finance\
--   Computes logarithmic daily returns\
--   Annualizes mean returns and covariance matrix\
--   Generates 10,000 random portfolios (Monte Carlo simulation)\
--   Visualizes the Efficient Frontier\
--   Optimizes portfolio weights to maximize the Sharpe Ratio\
+-   Downloads historical stock data from Yahoo Finance
+-   Computes logarithmic daily returns
+-   Annualizes mean returns and covariance matrix
+-   Generates 10,000 random portfolios (Monte Carlo simulation)
+-   Visualizes the Efficient Frontier
+-   Optimizes portfolio weights to maximize the Sharpe Ratio
 -   Enforces realistic constraints:
     -   Full capital allocation (∑ weights = 1)
     -   No short selling (0 ≤ weight ≤ 1)
@@ -34,13 +35,24 @@ This project:
 
 ------------------------------------------------------------------------
 
+## 📊 Example Workflow
+
+-   Download stock data
+-   Calculate daily log returns
+-   Generate random portfolios
+-   Plot return vs volatility
+-   Identify optimal portfolio (Max Sharpe)
+-   Highlight optimal point on Efficient Frontier
+
+------------------------------------------------------------------------
+
 ## 🛠 Tech Stack
 
--   Python\
--   NumPy\
--   Pandas\
--   SciPy\
--   Matplotlib\
+-   Python
+-   NumPy
+-   Pandas
+-   SciPy
+-   Matplotlib
 -   yfinance
 
 ------------------------------------------------------------------------
@@ -48,7 +60,7 @@ This project:
 ## 📦 Installation
 
 ``` bash
-git clone https://github.com/<your-username>/markowitz-portfolio-optimizer.git
+git clone https://github.com/Electrolight123/markowitz-portfolio-optimizer.git
 cd markowitz-portfolio-optimizer
 pip install -r requirements.txt
 ```
@@ -58,12 +70,17 @@ pip install -r requirements.txt
 ## ▶️ Usage
 
 ``` bash
-python src/portfolio_optimizer.py
+python Modern_portfolio_Theory.py
 ```
 
-The program will: - Display price charts - Plot daily returns - Simulate
-portfolios - Show the Efficient Frontier - Print optimal weights -
-Highlight the maximum Sharpe portfolio
+The program will: 
+
+- Display price charts
+- Plot daily returns
+- Simulate portfolios
+- Show the Efficient Frontier
+- Print optimal weights
+- Highlight the maximum Sharpe portfolio
 
 ------------------------------------------------------------------------
 
@@ -83,20 +100,23 @@ Sharpe = Return / Volatility
 
 ------------------------------------------------------------------------
 
-## 🎯 Why This Project Matters
+## ⚙ Constraints Applied
 
-This project demonstrates:
+-   Sum of weights = 1
+-   0 ≤ weight ≤ 1
+-   No leverage
+-   No short selling
 
--   Quantitative finance fundamentals\
--   Real financial data handling\
--   Monte Carlo simulation\
--   Numerical optimization\
--   Financial modeling in Python
+  Optimization is performed using Sequential Least Squares Programming (SLSQP) from SciPy.
 
-Applicable for roles in: - Quantitative Finance\
-- Asset Management\
-- Portfolio Strategy\
-- Financial Data Analytics
+------------------------------------------------------------------------
+
+## 📈 Sample Output
+
+-   Scatter plot of simulated portfolios
+-   Color-coded Sharpe ratio
+-   Efficient frontier visualization
+-   Optimal portfolio marked with a green star
 
 ------------------------------------------------------------------------
 
