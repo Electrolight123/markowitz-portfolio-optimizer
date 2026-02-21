@@ -5,6 +5,7 @@ Carlo simulation and constrained optimization (SLSQP) to construct an
 optimal portfolio by maximizing the Sharpe Ratio.
 
 This project demonstrates quantitative finance concepts including return modeling, covariance estimation, efficient frontier visualization, and portfolio optimization under realistic constraints.
+
 ------------------------------------------------------------------------
 
 ## 🚀 Project Overview
